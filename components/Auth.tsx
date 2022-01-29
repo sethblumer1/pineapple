@@ -1,13 +1,25 @@
 import React from "react";
 import StyledFirebaseAuth from "react-firebaseui/StyledFirebaseAuth";
 import firebase from "../firebase/clientApp";
+import {
+  Button,
+  Checkbox,
+  Flex,
+  FormControl,
+  FormLabel,
+  Heading,
+  Input,
+  Link,
+  Stack,
+  Image,
+} from '@chakra-ui/react';
 
 // Configure FirebaseUI.
 const uiConfig = {
   // Redirect to / after sign in is successful. Alternatively you can provide a callbacks.signInSuccess function.
   signInSuccessUrl: "/",
   // We will display GitHub as auth providers.
-  signInOptions: [firebase.auth.GithubAuthProvider.PROVIDER_ID],
+  signInOptions: [firebase.auth.GoogleAuthProvider.PROVIDER_ID],
 };
 
 function SignInScreen() {
