@@ -67,28 +67,31 @@ function SignInScreen() {
   return (
     <>
       <Flex
-        minH={'100vh'}
+        minH={'max-content'}
         align={'center'}
         justify={'center'}
+        flexDirection={{base: 'column', md: 'row'}}
         bg={useColorModeValue('gray.50', 'gray.800')}
-        p={10}
+        p={{base: 10, md: 8}}
+        overflow={{md: 'hidden'}}
         >
-          <Box
+          {/* <Box
             rounded={'lg'}
             bg={useColorModeValue('white', 'gray.700')}
             boxShadow={'sm'}
             p={8}
           
-            minH={'50vh'}
-            w={{base: '300px', md: '1100px'}}
+            minH={{base: '100%', md: '50vh'}}
+            w={{base: '300px', md: '900px'}}
             display={'flex'}
             flexDirection={{base: 'column', md: 'row'}}
             align={'flex-start'}
             justify={'center'}
             
 
-          >
-            <Stack display={'flex'} justifyContent={'center'} alignItems={'center'} bg={'#0248CD'} w={{base: '100%', md: '40%'}} h={{base:'300px', md: '500px'}}  borderRadius={'5px'}>
+          > */}
+            <Stack display={'flex'} justifyContent={'center'} alignItems={'center'} bg={'#0248CD'} w={{base: '100%', md: '40%'}} h={{base:'min-content', md: '500px'}}  
+                    borderRadius={'5px'} marginTop={{base: '230px', md: '0px'}} padding={{base: '20px', md: '0px'}}> 
               <Image
                   alt={'Login Image'}
                   objectFit={'contain'}
@@ -102,9 +105,9 @@ function SignInScreen() {
           
             {/* Informational section */}
             <Stack spacing={4}>
-                <Container maxW={'5xl'} py={12}>
+                <Container maxW={'5xl'} py={6}>
                   <SimpleGrid columns={{ base: 1, md: 2 }} spacing={10}>
-                      <Flex>
+                    <Flex>
                       <Image
                         rounded={'md'}
                         alt={'feature image'}
@@ -162,8 +165,9 @@ function SignInScreen() {
                   </SimpleGrid>
                 </Container>
             </Stack>     
-        </Box>
+        {/* </Box> */}
       </Flex>
+    
     </>
   );
 }
