@@ -91,7 +91,7 @@ function SignInScreen() {
 
           > */}
             <Stack display={'flex'} justifyContent={'center'} alignItems={'center'} bg={'#0248CD'} w={{base: '100%', md: '40%'}} h={{base:'min-content', md: '500px'}}  
-                    borderRadius={'5px'} marginTop={{base: '350px', md: '0px'}} padding={{base: '20px', md: '0px'}}> 
+                    borderRadius={'5px'} marginTop={{base: '100vh', md: '0px'}} padding={{base: '20px', md: '0px'}}> 
               <Image
                   alt={'Login Image'}
                   objectFit={'contain'}
