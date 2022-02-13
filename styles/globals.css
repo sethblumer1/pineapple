@@ -14,3 +14,34 @@ a {
 * {
   box-sizing: border-box;
 }
+
+
+.active {
+  color: #fafafa;
+}
+
+.active-icon {
+  color: skyblue !important;
+}
+
+.sidebar-items {
+  color: gray;
+  font-size: large;
+}
+
+.sidebar-items p {
+  margin-left: 1em;
+}
+
+/* Icon hover pseudo-classes */
+.sidebar-items:hover p {
+  color: #fafafa;
+}
+
+.sidebar-items:hover svg {
+  color: skyblue;
+}
+
+.sidebar-items:not(:last-child) {
+  margin-bottom: 1.5em;
+}

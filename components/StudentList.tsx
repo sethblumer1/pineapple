@@ -3,8 +3,6 @@ import { useDocument } from "react-firebase-hooks/firestore";
 import firebase from "../firebase/clientApp";
 
 interface Props {
-  // id is the id of the vote document
-  // (which is also the uid of the user, and the name of the user doucment for that user)
   id: string;
   student: string;
 }
